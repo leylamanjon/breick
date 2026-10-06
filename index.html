@@ -356,7 +356,7 @@ const SECS=[
  {id:'modelo',short:'Modelo',name:'Modelo de acompañamiento',ic:'gear',blurb:'Siete pasos',lead:'KOINOR trabaja como aliado estratégico dentro del equipo de Breick, de la definición a la implementación.',img:'dosificadora',pos:'center 40%'},
  {id:'frentes',short:'Frentes',name:'Frentes de acción',ic:'layers',blurb:'Tres frentes conectados',lead:'Tres frentes que se conectan: empresa, producto y mercado.',img:'surtidos',pos:'center 38%'},
  {id:'dinamica',short:'Dinámica',name:'Dinámica de trabajo',ic:'steps',blurb:'Tres etapas',lead:'Una metodología progresiva: del entendimiento de la situación actual a la implementación y transferencia de herramientas.',img:'cacao',pos:'center 25%'},
- {id:'equipo',short:'Equipo',name:'Equipo',ic:'people',blurb:'Nueve personas',lead:'Equipo multidisciplinario KOINOR, articulado según las necesidades de cada etapa.',img:'surtidos',pos:'center 70%'},
+ {id:'equipo',short:'Equipo',name:'Equipo',ic:'people',blurb:'Diez personas',lead:'Equipo multidisciplinario KOINOR, articulado según las necesidades de cada etapa.',img:'surtidos',pos:'center 70%'},
  {id:'inversion',short:'Inversión',name:'Inversión',ic:'coin',blurb:'Tres modalidades',lead:'Se define con los frentes que Breick priorice, después del levantamiento inicial de información.',img:'dosificadora',pos:'center 70%'},
  {id:'comercial',short:'Comercial',name:'Consideraciones comerciales',ic:'list',blurb:'Alcance, plazos y pagos',lead:'Alcance, plazos, forma de pago y responsables.',img:'ovalados',pos:'center 70%'},
  {id:'pasos',short:'Próximos pasos',name:'Próximos pasos',ic:'flag',blurb:'Nueve pasos',lead:'Del primer encuentro al inicio de la implementación.',img:'surtidos',pos:'center 20%'}
@@ -480,7 +480,7 @@ V.dinamica=()=>({panel:hp(SECS[4]),
  content:`<div class="steps">${[['I','Diagnóstico y definición','168px','var(--sky)'],['II','Estructuración, desarrollo y acompañamiento','248px','var(--accent)'],['III','Implementación','328px','var(--brand)']].map((s,i)=>`<div class="step" style="--h:${s[2]};--c:${s[3]};--i:${i}"><span class="roman">${s[0]}</span><b>${s[1]}</b></div>`).join('')}</div>`});
 
 V.equipo=()=>({panel:hp(SECS[5]),
- content:`<div class="team">${[['Ignacio Paniagua'],['Jorge Zamora'],['Moira Riera'],['Leonardo Pantoja'],['Abraham Velasco','Oveja'],['Leyla Manjón'],['Nicol Callau'],['Sebastián Montecinos'],['Daniel Careaga']].map(p=>{const w=p[0].split(' ');return `<div class="person"><span class="mono">${w[0][0]}${w[1][0]}</span><span><b>${p[0]}</b>${p[1]?`<small>(${p[1]})</small>`:''}</span></div>`}).join('')}</div>`});
+ content:`<div class="team">${[['Ignacio Paniagua'],['Jorge Zamora'],['Moira Riera'],['Leonardo Pantoja'],['Abraham Velasco','Oveja'],['Leyla Manjón'],['Nicol Callau'],['Sebastián Montecinos'],['Daniel Careaga'],['Camila Terrazas']].map(p=>{const w=p[0].split(' ');return `<div class="person"><span class="mono">${w[0][0]}${w[1][0]}</span><span><b>${p[0]}</b>${p[1]?`<small>(${p[1]})</small>`:''}</span></div>`}).join('')}</div>`});
 
 V.inversion=()=>({panel:hp(SECS[6]),
  content:`<div class="inv">
